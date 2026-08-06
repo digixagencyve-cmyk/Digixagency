@@ -912,7 +912,7 @@ const CONFIG = {
     toast('PDF descargado ✓');
   }
 
-  // Botones WhatsApp / Correo: mandan el PDF
+  // WhatsApp / Correo: mandan el PDF (móvil: menú de compartir con el PDF adjunto; PC: descarga + abre el canal)
   async function enviarPDF(canal){
     if(!window.html2canvas || !window.jspdf){ toast('Necesitas internet. Usa "Descargar PDF" y adjúntalo.'); return; }
     toast('Creando tu PDF…');
